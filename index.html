@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XR Lab Independent Study Opportunities</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .poster {
+            border-bottom: 1px solid #dee2e6;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+        }
+        .poster:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        h1, h2, h3, h4, h5 {
+            color: #004085;
+        }
+        h1 { text-align: center; margin-bottom: 30px; }
+        h2 { border-bottom: 2px solid #0056b3; padding-bottom: 10px; margin-top: 0; }
+        h4 { margin-top: 25px; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+        h5 { margin-top: 20px; margin-bottom: 5px; }
+        .page-header { 
+            font-style: italic; 
+            color: #555; 
+            border-bottom: 1px solid #eee; 
+            padding-bottom: 10px; 
+            margin-bottom: 15px; 
+        }
+        .toc-container {
+            background-color: #f0f8ff;
+            border: 1px solid #cce5ff;
+            border-radius: 8px;
+            padding: 15px 25px;
+            margin-bottom: 40px;
+        }
+        .toc-container h3 {
+            margin-top: 0;
+            color: #004085;
+            border-bottom: 1px solid #b8daff;
+            padding-bottom: 10px;
+        }
+        .toc-container ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+        .toc-container li {
+            margin-bottom: 10px;
+        }
+        .toc-container li:last-child {
+            margin-bottom: 0;
+        }
+        .toc-container a {
+            font-weight: 500;
+        }
+        .section-title { font-weight: bold; margin-top: 20px; color: #333; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        details {
+            margin-top: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            background-color: #fdfdfd;
+        }
+        summary {
+            font-weight: bold;
+            color: #007bff;
+            cursor: pointer;
+            outline: none;
+        }
+        summary:hover {
+            text-decoration: underline;
+        }
+        .apply-info {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 40px;
+            border: 1px solid #ced4da;
+        }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Fall 2025 Independent Study Opportunities<br>XR Lab, Cognitive Science Department</h1>
+
+        <!-- Updated Table of Contents -->
+        <div class="toc-container">
+            <h3>Available Positions for Fall 2025</h3>
+            <ul>
+                <li><a href="#ai-neuro-arch">AI & Cog Neuro for Architecture</a></li>
+                <li><a href="#web-architect">Web Architect & AI Systems Integrator</a></li>
+                <li><a href="#ai-agent">AI Agent for Auto-Grading</a></li>
+                <li><a href="#data-analyst">Data Analyst – VR & Physiological Experiments</a></li>
+                <li><a href="#vr-production">Research Assistant - VR Research and Production</a></li>
+                <li><a href="#interaction-designer">Interaction Designer for Cognitive Science Research</a></li>
+            </ul>
+        </div>
+
+        <!-- New Project 1 -->
+        <div class="poster">
+            <h2 id="ai-neuro-arch">Project 1: AI & Cog Neuro for Architecture</h2>
+            <div class="page-header">
+                Professor Kirsh | 4-Credit Course<br>
+                Eligibility: Upper-division students with a minimum GPA of 3.5
+            </div>
+            <p>This project is for students interested in the intersection of architecture, artificial intelligence, and cognitive neuroscience. The goal is to develop a computational tool that can analyze architectural designs—such as floor plans or 3D models—and predict their cognitive and emotional impact on occupants. This is a chance to apply cutting-edge research in embodied cognition and predictive processing to tangible design problems. Participants will gain hands-on experience in building a novel type of design tool, one that enriches the creative process by providing real-time feedback grounded in cognitive science. This project is ideal for students who want to develop a strong, interdisciplinary portfolio and contribute to a pioneering area of research.</p>
+            <details>
+                <summary>[ See Full Description... ]</summary>
+                <p class="section-title">Project Details</p>
+                <p>We're building a system that predicts how architectural spaces affect human psychology. The system analyzes architectural images to extract environmental factors (lighting, materials, spatial layout, vegetation, etc.) and predicts psychological outcomes like attention restoration, cognitive performance, and stress levels.</p>
+                
+                <p class="section-title">Current System</p>
+                <ul>
+                    <li><strong>Vision-Language Models:</strong> Use GPT-4V, Claude-3.5-Sonnet, Gemini for image analysis</li>
+                    <li><strong>Backend:</strong> Python, FastAPI, SQLite database, async batch processing</li>
+                    <li><strong>Frontend:</strong> Streamlit interface, potential React development</li>
+                    <li><strong>Prediction Engine:</strong> Research-calibrated models based on environmental psychology literature</li>
+                </ul>
+
+                <p class="section-title">Research Question</p>
+                <ul>
+                    <li>How can we improve consistency and accuracy of VLM-based spatial analysis?</li>
+                    <li>What interface designs best support architectural design workflows?</li>
+                    <li>How do we validate AI predictions against real behavioral outcomes?</li>
+                </ul>
+
+                <p class="section-title">Project Tracks</p>
+                <h4>AI/ML Track:</h4>
+                <ul>
+                    <li>Improve prompt engineering for VLM spatial analysis</li>
+                    <li>Develop evaluation metrics for architectural image analysis</li>
+                    <li>Build data processing pipelines for large image collections</li>
+                    <li>Implement model comparison and ensemble methods</li>
+                </ul>
+                <h4>Literature Mining & Knowledge Discovery Track:</h4>
+                <ul>
+                    <li>Use LLMs to systematically analyze environmental psychology research papers</li>
+                    <li>Identify new environmental factors not currently captured in our system</li>
+                    <li>Extract quantitative relationships between spatial properties and human responses</li>
+                    <li>Build knowledge graphs connecting architectural features to cognitive/emotional outcomes</li>
+                    <li>Develop automated literature review tools for ongoing research integration</li>
+                </ul>
+                <h4>HCI/Design Track:</h4>
+                <ul>
+                    <li>Design interfaces for architects to upload and analyze building designs</li>
+                    <li>Create visualization tools for environmental factor impacts</li>
+                    <li>Develop user testing protocols for design tools</li>
+                    <li>Build mobile apps for real-time space assessment</li>
+                </ul>
+
+                <p class="section-title">Requirements</p>
+                <h4>Required:</h4>
+                <ul>
+                    <li>Proficient Python programming (classes, APIs, data structures)</li>
+                    <li>Machine learning coursework or equivalent experience</li>
+                    <li>Git version control</li>
+                </ul>
+                <h4>Helpful:</h4>
+                <ul>
+                    <li>Computer vision experience (OpenCV, image processing)</li>
+                    <li>Web development (any framework)</li>
+                    <li>UI/UX design tools and methods</li>
+                    <li>Database/SQL knowledge</li>
+                </ul>
+
+                <p class="section-title">Time Commitment</p>
+                <p>10h+ per week</p>
+                
+            </details>
+        </div>
+
+        <!-- Now Project 2 -->
+        <div class="poster">
+            <h2 id="web-architect">Project 2: Web Architect & AI Systems Integrator</h2>
+            <div class="page-header">
+                Professor Kirsh | 4-Credit Course<br>
+                Eligibility: Upper-division students with a minimum GPA of 3.5
+            </div>
+            <p>This project offers an opportunity to contribute to the development of a sophisticated, AI-driven website serving as the digital infrastructure for a cognitive science research lab. This role moves beyond standard web maintenance and into the architecture of an intelligent digital ecosystem designed for knowledge management and research dissemination. The skills developed here—integrating custom back-end applications with a user-friendly front-end, implementing AI-driven search, and managing a complex information architecture—are highly practical and sought after in both industry and academia.</p>
+            <p>Participants will gain hands-on experience in:</p>
+            <ul>
+                <li><strong>Knowledge Management:</strong> Structuring and presenting complex academic content from our custom-built encyclopedias.</li>
+                <li><strong>AI Integration:</strong> Implementing intelligent, context-aware search and data retrieval systems.</li>
+                <li><strong>Full-Stack Development:</strong> Working on a live project that combines a content management system (WordPress) with custom-programmed applications on our own virtual machine.</li>
+                <li><strong>Custom Tool Integration:</strong> Deploying novel lab-built applets, including an in-window Google Drive viewer and a hierarchical FAQ system.</li>
+            </ul>
+            <p>This position is ideal for students seeking to build a strong portfolio and gain tangible experience in advanced web architecture.</p>
+            <details>
+                <summary>[ See Full Description... ]</summary>
+                <p class="section-title">Project Description</p>
+                <p>Our lab is developing a sophisticated, AI-driven website hosted on our own virtual machine. The project's goal is to create an integrated digital environment for our research, far beyond a simple informational site. While the core system is nearly complete, significant work is required to deploy our vast content—including several custom-built encyclopedias—and to integrate a suite of powerful, previously unused applets.</p>
+                <p>The student in this role will be central to the site's architecture. Key responsibilities include knowledge management strategy, implementing an intelligent AI-based search system, and integrating our custom applets for tasks like viewing Google Drive files directly on a project page or managing hierarchical FAQs. While we use WordPress for basic content entry by non-programmers, the majority of the site's dynamic functionality is driven by our own programs. This project offers a valuable opportunity to develop practical skills in managing a future-oriented, content-rich web application, making it an excellent addition to a resume or graduate school application.</p>
+                <p class="section-title">Requirements</p>
+                <ul>
+                    <li>Strong familiarity with web programming languages and frameworks, including HTML, CSS, and React.</li>
+                    <li>Experience with or strong interest in interactive design and user experience (UI/UX).</li>
+                    <li>Experience with design tools like Figma is a plus.</li>
+                    <li>A proactive and independent problem-solver, able to work on a complex, multi-faceted project.</li>
+                    <li>Interest in knowledge management, AI, and building intelligent systems.</li>
+                </ul>
+                <p class="section-title">Time Commitment</p>
+                <p>10h+ per week</p>
+            </details>
+        </div>
+
+        <!-- Now Project 3 -->
+        <div class="poster">
+            <h2 id="ai-agent">Project 3: AI Agent for Auto-Grading</h2>
+            <div class="page-header">
+                Professor Kirsh | 4-Credit Course<br>
+                Eligibility: Upper-division students with a minimum GPA of 3.5
+            </div>
+            <p>This research project addresses a significant challenge in applied AI: the automated evaluation of complex, multimodal student work. The goal is to develop an intelligent agent capable of grading assignments that combine text (Word reports) and visual media (slide presentations). This work is situated at the intersection of cognitive science, AI, and educational technology.</p>
+            <p>This role provides a unique opportunity to develop sought-after skills in machine learning and computational linguistics by tackling real-world problems. The experience gained is highly relevant for students interested in careers in AI development, data science, and educational technology, and serves as a compelling project for a portfolio or graduate school application.</p>
+            <details>
+                <summary>[ See Full Description... ]</summary>
+                <p class="section-title">Project Description</p>
+                <p>This project focuses on the design, development, and testing of an intelligent AI agent capable of auto-grading complex, multimodal student assignments. The primary challenge is to create a system that can evaluate both text-based content from Word reports and visual/structural content from slide presentations. Students in this role will engage with this interdisciplinary problem, blending principles from cognitive science and human-computer interaction into an applied AI system.</p>
+                <p>Core tasks will include transforming human rubrics into machine-readable formats, designing the input-output schemas for the AI agent, and rigorously testing how well current AI systems can interpret subjective qualities like creativity and visual appeal alongside structured criteria. This is a research opportunity to work on a tangible system with practical applications: reducing instructor grading time and enhancing the consistency and speed of student feedback. The skills acquired in this project are directly applicable to advanced topics in AI.</p>
+                <p class="section-title">Requirements</p>
+                <ul>
+                    <li>Solid programming experience (Python preferred).</li>
+                    <li>A strong interest in artificial intelligence, human-computer interaction, and education technology.</li>
+                    <li>Familiarity with the design of AI agents or machine learning concepts is a significant plus, but not a firm requirement.</li>
+                    <li>Ability to think critically about how to translate abstract concepts (e.g., "creativity") into measurable parameters.</li>
+                    <li>Excellent problem-solving skills and the ability to work independently.</li>
+                </ul>
+                <p class="section-title">Time Commitment</p>
+                <p>10h+ per week</p>
+            </details>
+        </div>
+        
+        <!-- Now Project 4 -->
+        <div class="poster">
+            <h2 id="data-analyst">Project 4: Data Analyst – VR & Physiological Experiments</h2>
+            <div class="page-header">
+                Professor Kirsh | 4-Credit Course<br>
+                Eligibility: Upper-division students with a minimum GPA of 3.5
+            </div>
+            <p>This project offers hands-on experience in analyzing complex, high-dimensional data from human subjects. Our lab conducts experiments where participants in VR and physical environments are monitored with sensors measuring heart rate, electrodermal activity, 3D motion, and respiration. The primary task is to extract meaningful signals from this noisy, multi-source data.</p>
+            <p>This is an ideal applied project for students with a background in statistics or data science. The practical skills you will develop—including data cleaning, time-series analysis, statistical modeling, and effective data visualization—are fundamental to quantitative research and are highly valued in data-driven industries. This role provides an excellent opportunity to build a strong analytical portfolio and apply theoretical knowledge to real-world research questions.</p>
+            <details>
+                <summary>[ See Full Description... ]</summary>
+                <p class="section-title">Project Description</p>
+                <p>We are conducting experiments in both VR and physical environments where subjects wear sensors that measure heart rate, heart rate variability, electrodermal activity, 3D motion and respiratory activity. It is not trivial to extract a meaningful signal from all these sources, making this a great learning project for a data scientist. Students in this role will help with statistical analysis, data smoothing and cleaning, and the production of meaningful graphical results and statistical discussions. This is an excellent opportunity for students with at least one quarter of statistics coursework or a course in data science. We will also be creating a wizard, possibly with AI, to walk students through the statistical analyses they will need for the experiments they are designing. The experience gained is highly practical for any student pursuing a career in data science or quantitative research.</p>
+                <p class="section-title">Requirements</p>
+                <ul>
+                    <li>At least one quarter of statistics or data science coursework.</li>
+                    <li>Interest in data analysis and experimental research.</li>
+                    <li>Experience with Python, R, or statistical software (e.g., SPSS, MATLAB) is a must.</li>
+                    <li>Interest or experience with AI is a plus.</li>
+                </ul>
+                <p class="section-title">Time Commitment</p>
+                <p>10h+ per week</p>
+            </details>
+        </div>
+
+        <!-- Now Project 5 -->
+        <div class="poster">
+            <h2 id="vr-production">Project 5: Research Assistant - VR Research and Production</h2>
+            <div class="page-header">
+                Professor Kirsh | 4-Credit Course<br>
+                Eligibility: Upper-division students with a minimum GPA of 3.5
+            </div>
+            <p>This independent study offers an opportunity to engage directly with the creation and implementation of high-resolution virtual environments for research. This multi-track position is ideal for students wishing to gain practical, resume-building skills directly applicable to the VR/AR industry, game development, and human-computer interaction research. Whether your interests are in art and design, programming, or cognitive science theory, there is a role for you.</p>
+             <p>We offer three distinct tracks:</p>
+            <ul>
+                <li><strong>Art Track:</strong> Focus on 3D modeling, texturing, and level design.</li>
+                <li><strong>Programming Track:</strong> Develop interactive VR experiences in Unity using C#.</li>
+                <li><strong>Research Track:</strong> Contribute to experiment design, literature review, and theory.</li>
+            </ul>
+             <p>This is a chance to acquire specialized, sought-after skills in an applied research setting.</p>
+            <details>
+                <summary>[ See Full Description... ]</summary>
+                <p class="section-title">Project Description</p>
+                 <p>Our research investigates human activity in transitional architectural spaces through high-resolution virtual environments. Creating high-quality architectural / game environments is a detail-demanding process that requires developing custom workflows and acquiring new skillsets for specific challenges. We explore a broad range of areas including 3D scanning, 3D modeling and texturing, lighting and rendering, game development and programming, and data collection through VR tracking sensors. This opportunity is ideal for students interested in VR game development, as the acquired skills can be directly applied to the game development industry.</p>
+                <p class="section-title">Requirements</p>
+                <h4>Art Track</h4>
+                <ul>
+            
+                    <li>Skills (at least one required): architectural 3D modeling, texturing, Unity asset preparation, level design, rendering.</li>
+                    <li>If starting with minimal knowledge or skillset, we expect additional weekly hours to learn and complete assigned tasks in a self-motivated manner.</li>
+                    <li>Portfolio (optional but encouraged).</li>
+                </ul>
+                <h4>Programming Track</h4>
+                <ul> 
+                    <li>Required: experience in C# and Unity.</li>
+                    <li>If starting with minimal programming skills, we require experience using AI copilots (e.g., GitHub Copilot, ChatGPT) for code comprehension and generation.</li>
+                    <li>Interest in physical interaction supported by full-body tracking in VR.</li>
+                    <li>Familiarity with data logging or sensor integration is a plus.</li>
+                </ul>
+                <h4>Research Track</h4>
+                <ul>
+                    <li>Preferred background: architecture, design theory, or enactive cognition.</li>
+                    <li>Strong organizational skills for reading, analysis, and summarization.</li>
+                    <li>Visual communication skills (sketching, Photoshop, illustration, diagramming) strongly preferred.</li>
+                    <li>Experience with academic writing and literature reviews is a plus.</li>
+                </ul>
+
+                <p class="section-title">Time Commitment</p>
+                <p>10h+ per week</p>
+
+            </details>
+        </div>
+        
+        <!-- Now Project 6 -->
+        <div class="poster">
+            <h2 id="interaction-designer">Project 6: Interaction Designer for Cognitive Science Research</h2>
+            <div class="page-header">
+                Professor Kirsh | 4-Credit Course<br>
+                Eligibility: Upper-division students with a minimum GPA of 3.5
+            </div>
+            <p>This project addresses a core challenge in experimental science: designing an interface that is simple enough for a test subject to use under pressure, yet powerful enough for a scientist to configure a complex experiment. Our lab develops numerous cognitive tests, and this role is critical for creating the user interfaces that make this research possible. You will design and build GUIs with distinct "Participant" and "Experimenter" views, managing everything from stimuli presentation to precise data collection.</p>
+            <p>This is a unique opportunity to apply UI/UX skills to solve non-trivial design challenges that directly impact the validity of scientific research. The experience of designing for specialized expert users and building robust interfaces for data collection is highly valuable and will result in a portfolio of tangible, impactful projects.</p>
+            <details>
+                <summary>[ See Full Description... ]</summary>
+                <p class="section-title">Project Description</p>
+                <p>A graphical user interface (GUI) for a cognitive test must serve two very different users simultaneously. The <strong>Participant</strong> needs a clean, intuitive interface that minimizes cognitive load, ensuring we measure their abilities, not their frustration with the UI. The <strong>Researcher</strong>, however, needs a powerful "control panel" to configure the experiment's logic—adjusting trial counts, setting stimuli exposure times in milliseconds, and managing data output.</p>
+                <p>You will work directly with cognitive scientists to translate their experimental protocols into seamless and robust user interfaces. Your tasks will include designing and implementing GUIs for a wide range of cognitive tasks (e.g., working memory tests, reaction time tasks), creating the researcher's "control panel," and crafting the focused, aesthetically pleasing interface for test-takers. Your work will have a direct impact on the quality of our scientific research.</p>
+                <p class="section-title">Requirements</p>
+                <ul>
+                    <li>Experience building user interfaces with a modern framework (Python-based like <strong>Streamlit</strong>, <strong>Tkinter</strong>, or <strong>PyQt</strong> is ideal, but experience with web frameworks like <strong>React/Vue/Svelte</strong> is also highly valued).</li>
+                    <li>A strong portfolio or examples demonstrating excellent UI/UX design principles.</li>
+                    <li>A passion for user-centered design and solving complex workflow problems.</li>
+                    <li>Excellent communication skills to translate scientific requirements into functional design.</li>
+                    <li>An interest in cognitive science or psychology is a major plus.</li>
+                </ul>
+                <p class="section-title">Time Commitment</p>
+                <p>10h+ per week</p>
+            </details>
+        </div>
+
+        <div class="apply-info">
+            <h3>How to Apply for All Positions</h3>
+            <p>Interested students should fill in this application form as soon as possible:</p>
+            <p><a href="https://forms.gle/Duy4BMvCb7YtCWD66" target="_blank">https://forms.gle/Duy4BMvCb7YtCWD66</a></p>
+            <p>Interviews are conducted on a rolling basis, so we encourage you to apply early!</p>
+        </div>
+    </div>
+</body>
+</html>
+
